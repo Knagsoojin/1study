@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: "Gaegu", sans-serif;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* footer빼고 전체 */
+.container {
+  margin: 2%;
+}
+
+/* 로고 */
+.logo {
+  background-color: rgb(240, 249, 221);
+  font-size: 35px;
+  display: block;
+  color: rgb(147, 139, 250);
+  /* position: fixed; */
+  top: 40px;
+  text-decoration: none;
+}
+
+/* home icon */
+.home-icon1 {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-icon2 {
+  margin-top: 46%;
+  height: 50px;
+}
+
+.home-icon1 p {
+  display: none;
+  position: absolute; /* 절대 위치 지정 */
+  top: 22%; /* 원하는 위치로 조정 */
+  left: 46%; /* 원하는 위치로 조정 */
+  background-color: #fff; /* 배경색 설정 */
+  z-index: 1; /* 다른 요소 위에 표시되도록 설정 */
+  padding: px;
+}
+
+.home-icon1:hover p {
+  display: block;
+}
+
+/* 게시판 title */
+.title {
+  color: rgb(255, 218, 170);
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-size: 30px;
+  text-align: center;
+}
+/* 게시판 이름과 텍스트 입력창*/
+.content {
+  border: 5px dotted #c9dee7;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* userName input */
+.userName {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* text input */
+.add {
+  width: 50%;
+  height: 50%;
+  font-size: 20px;
+}
+
+/* 작성 button */
+.add-button {
+  margin-bottom: 5%;
+}
+
+/* 작성 완료된 글 목록 */
+.userText {
+  border-top: 2px solid #c9dee7;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
+}
+
+.board-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  font-size: 25px;
+  color: rgb(113, 139, 130);
+  text-align: center;
+}
+
+.text-list {
+  list-style: none;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  text-align: center;
+  width: 50%;
+}
+
+.text-list li {
+  margin: 5% 0;
+  color: gray;
+}
+
+/* delete button */
+.delete {
+  margin-left: 5%;
+}
+/* footer */
+
+footer {
+  margin-top: 5%;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(253, 248, 248);
+  padding: 10px;
+  position: fixed;
+}
+
+footer li {
+  text-align: center;
+  font-size: 13px;
+  list-style: none;
+}
+
+footer ul {
+  margin: 10px 0px 10px 0px;
+  color: gray;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: rgb(246, 137, 155);
+}
